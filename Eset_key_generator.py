@@ -126,5 +126,6 @@ wait(browser_eset, 10).until(EC.visibility_of_element_located((By.XPATH, '//*[@i
 browser_eset.find_element(By.XPATH, '//*[@id="main-content"]/div/div[1]/div/main/div/div/div[2]/div/div/div[2]/div/div/div/div/div[2]/div/div/div/button').click()
 browser_eset.find_element(By.XPATH, '//*[@id="main-content"]/div/div[1]/div/main/div/div/div[2]/div/div/div[2]/div/button').click()
 
-key = browser_eset.find_element(By.XPATH, '//*[@id="main-content"]/div/div/div/main/div/div/div[2]/div/div/div[3]/div[1]/div/div/div/div[1]/div[2]/div[6]/div/div').find_element(By.TAG_NAME,'p').text
+key = browser_eset.find_element(By.CLASS_NAME , 'css-1hznddj').text[221:]
 logging.info(key)
+print(key)
